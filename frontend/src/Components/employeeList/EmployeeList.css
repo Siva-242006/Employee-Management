@@ -1,0 +1,125 @@
+.employee-list {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    margin: 20px auto;
+  width: 100%;
+  box-sizing: border-box;
+    background: linear-gradient(to right, #f8f9fa, #bae9e1);
+
+}
+
+.employee-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.employee-list table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.employee-list th,
+.employee-list td {
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.employee-list th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.employee-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.employee-list button {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.employee-list button:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: red !important;
+  color: white;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.no-employees-text{
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.no-employees-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+  .employee-list {
+    background-color: transparent;
+  }
+
+  .employee-list table,
+  .employee-list thead,
+  .employee-list tbody,
+  .employee-list th,
+  .employee-list td,
+  .employee-list tr {
+    display: block;
+    width: 100%;
+  }
+
+  .employee-list thead {
+    display: none;
+  }
+
+  .employee-list tr {
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .employee-list td {
+    padding: 10px 15px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .employee-list td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+    width: 40%;
+  }
+
+ 
+}

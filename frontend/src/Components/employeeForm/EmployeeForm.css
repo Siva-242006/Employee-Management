@@ -1,0 +1,104 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.employee-form {
+  width: 100%;
+  max-width: 650px;
+  background-color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.employee-form h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.employee-form input,
+.employee-form select,
+.employee-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #f9f9f9;
+  transition: border-color 0.25s ease;
+}
+
+.employee-form input:focus,
+.employee-form select:focus,
+.employee-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.employee-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.employee-form button {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-msg {
+  color: #b30000;
+  background-color: #ffecec;
+  border-left: 5px solid red;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.error-msg li {
+  margin-bottom: 6px;
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+.error-msg li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+}
+
+
+@media (max-width: 768px) {
+  .employee-form {
+    padding: 25px 20px;
+  }
+
+  .employee-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .employee-form input,
+  .employee-form select,
+  .employee-form textarea {
+    font-size: 0.95rem;
+  }
+}
