@@ -1,4 +1,4 @@
-const EMP_API = process.env.REACT_APP_BACKEND_URL/api/employees;
+const EMP_API = `${process.env.REACT_APP_BACKEND_URL}/api/employees`;
 
 export const getAllEmployees = async () => {
   const res = await fetch(`${EMP_API}`);
