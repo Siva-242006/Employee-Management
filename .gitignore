@@ -1,30 +1,55 @@
-# Node modules
+# ----------------------------------------
+# Node.js
+# ----------------------------------------
 node_modules/
-frontend/node_modules/
-backend/node_modules/
-
-# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
 
+# ----------------------------------------
+# dotenv environment variables
+# ----------------------------------------
+.env
+.env.*.local
+
+# ----------------------------------------
+# Build output
+# ----------------------------------------
+build/
+dist/
+.cache/
+.out/
+coverage/
+
+# ----------------------------------------
 # OS-specific
+# ----------------------------------------
 .DS_Store
 Thumbs.db
 
-# Production builds
-frontend/build/
-dist/
-
-# Testing coverage
-coverage/
-
-# Editor settings
-.vscode/
-
-# MongoDB dumps (if used locally)
-dump/
-
-# Screenshots and debug assets
-screenshots/
+# ----------------------------------------
+# Logs
+# ----------------------------------------
+logs/
 *.log
+
+# ----------------------------------------
+# IDEs & Editors
+# ----------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ----------------------------------------
+# React-specific
+# ----------------------------------------
+/frontend/node_modules
+/frontend/build
+
+# ----------------------------------------
+# Backend-specific
+# ----------------------------------------
+/backend/node_modules
+/backend/.env
