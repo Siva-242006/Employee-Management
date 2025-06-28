@@ -1,4 +1,4 @@
-const COMPANY_API = 'http://localhost:5000/api/companies';
+const COMPANY_API = `${process.env.REACT_APP_BACKEND_URL}/api/companies`;
 
 export const getAllCompanies = async () => {
   const response = await fetch(`${COMPANY_API}/`);

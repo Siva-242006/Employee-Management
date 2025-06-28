@@ -1,4 +1,4 @@
-const EMP_API = 'http://localhost:5000/api/employees';
+const EMP_API = `${process.env.REACT_APP_BACKEND_URL}/api/employees`;
 
 export const getAllEmployees = async () => {
   const res = await fetch(`${EMP_API}`);
@@ -31,7 +31,7 @@ export const updateEmployee = async (id, emp) => {
 };
 
 export const deleteEmployee = async (id) => {
-  const response = await fetch(`http://localhost:5000/api/employees/${id}`, {
+  const response = await fetch(`${EMP_API}/${id}`, {
     method: 'DELETE',
   });
   const data = await response.json();
