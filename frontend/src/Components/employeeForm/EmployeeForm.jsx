@@ -297,8 +297,8 @@ const EmployeeForm = () => {
         </select>
         {form.maritalStatus === 'Married' && (
           <>
-            {renderInput('spouseName', 'Spouse Name', 'text', false)}
-            {renderInput('noOfKids', 'Number of Kids', 'number', false)}
+            {renderInput('spouseName', 'Spouse Name', 'text', true)}
+            {renderInput('noOfKids', 'Number of Kids', 'number', true)}
           </>
         )}
         {renderInput('fatherName', 'Father Name')}
