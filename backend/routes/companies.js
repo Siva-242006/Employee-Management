@@ -2,12 +2,11 @@ const express = require('express');
 const router = express.Router();
 const Company = require('../models/Company');
 
-// Generate Unique Company ID (e.g., TATAE001, GOOGL002)
 const generateCompanyId = async (name) => {
   const cleanPrefix = name
     .toUpperCase()
-    .replace(/[^A-Z0-9]/g, '')  // Remove non-alphanumeric characters
-    .slice(0, 5);               // Take first 5 characters
+    .replace(/[^A-Z0-9]/g, '')  
+    .slice(0, 5);              
 
   const count = await Company.countDocuments({
     name: new RegExp(`^${name}$`, 'i')
